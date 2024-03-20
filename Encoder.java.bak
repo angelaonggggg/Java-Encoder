@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+
+public class HelloWorld {
+    static Scanner scanner = new Scanner(System.in); 
+    public static void main(String[] args) {
+
+    System.out.print("Enter character: ");
+
+    char inputChar = scanner.next().charAt(0);  // Read user input
+    System.out.println("The entered character is: " + inputChar);
+    System.out.print("Enter plaintext:");
+    String inputPlaintext = scanner.nextLine();
+    scanner.close();
+    }
+    
+    static char[] referenceTable = {
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        '(', ')', '*', '+', ',', '-', '.', '/'
+    };
+    
+    public String encode(String plainText) {
+        return null;
+    }
+}
+
+//public String decode (String encodedText);
